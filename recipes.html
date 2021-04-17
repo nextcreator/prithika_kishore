@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Page</title>
+</head>
+<style>
+    .img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    height: 10%;
+  }
+
+    .head {
+      text-align: center;
+      color: rgb(0, 0, 0);  
+      font-size: 20px;
+      font-family: 'Bubblegum Sans', cursive;
+      font-family: 'Economica', sans-serif;
+    }
+
+    body{
+            text-align: center;
+            font-size: 20px;
+            
+    }
+
+    .title { 
+            color: rgb(52, 156, 253);
+            border: 2px solid black;
+            margin: 5px;
+            padding: 5px;
+            text-align: center;background-color: antiquewhite;
+            font-size: 150%; 
+            font-family: cursive
+    }
+    nav ul{
+            background-color: rgba(255, 255, 0, 0.144);
+                color: rgb(0, 0, 0);
+                text-align: center;
+                padding: 1%;
+                font-size: medium;
+        }
+
+        nav ul li{
+            list-style-type: none;
+            display: inline;
+            padding-left: 3%;
+            padding-right: 3%;
+        }
+
+        nav ul li a{
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            font-size: 125%;
+        }
+</style>
+<body style="background-image: url(data:image/jpeg;base64,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); background-size: 100% 100%; ">
+    <div class="head">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Economica:wght@700&display=swap" rel="stylesheet">       
+        <h1 style="text-align: center; font-size: 40px; font-family: cursive; border: 2px solid black;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    font-size: 150%; background-color: rgba(93, 180, 252, 0.486);">My Recipes😋</h1>
+    </div>
+
+    <br><br>
+
+    <div class="head">
+        <h2><u>Yummy Homemade Donuts🍩</u></h2>
+    </div>
+    <div>
+        <img src="./static/maindonuts.jpg" alt="donuts" class="img">
+        <a href="./homemadedonuts.html">Click for the recipe🍩</a>
+    </div>
+    <br>
+    <div class="head">
+        <h2><u>Omlette Recipe</u></h2>
+    </div>
+    <div>
+        <img src="./static/eggs.jpg" alt="omlette recipe" class="img">
+        <a href="./omletterecipe.html">Click for the recipe🍳</a>
+    </div>
+
+    <footer>
+        <nav>
+         <ul>
+             <li><a href="./home.html">❗Back to home❗</a></li>
+         </ul>
+        </nav>
+    </footer>
+    <footer>
+        <p style="font-size: small;">Needles & Ladles Private Limited © 2021<br>
+            All rights reserved</p>
+    </footer>
+</body>
+</html>
